@@ -1,9 +1,7 @@
 # OTP Validation JS
 ## 📷 Demo
 
-<video width="70%" height="70%" controls>
-    <source src="demo.mp4" type="video/mp4">
-</video>
+https://github.com/user-attachments/assets/28a83c59-7bf8-412f-8147-44164ad0fbb4
 
 >This project was based on https://www.youtube.com/watch?v=htzSEZh2WzA
 
