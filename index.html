@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Validation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js" ></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+</head>
+<body>
+    <div class="container step1">
+        <h2>OTP Verification</h2>
+        <br/>
+        <h4>Enter your email</h4>
+        <br/>
+        <p>You will receive an email with a OTP <br>
+            (one-time password)</p>
+    
+        <div class="form">
+            <input type="email" name="email" id="email" placeholder="Email Address" onkeyup="validateEmail(this.value)">
+        </div>
+        <button class="checkButton">Check OTP</button>
+    </div>
+
+    <div class="container step2">
+        <h2>OTP Verification</h2>
+        <br/>
+        <h4>Enter the OTP</h4>
+        <br/>
+        <p> One-time password sent to <span id="verifyEmail"></span></p>
+    
+        <div class="otp-form">
+            <p>Enter the 4 digit code we sent you via email to continue</p>
+            <div class="otp-group">
+                <input type="number" />
+                <input type="number" />
+                <input type="number" />
+                <input type="number" />
+            </div>
+            <p>
+                Not your email or didn't receive the code?
+                <a href="javascript:void(0)" onclick="changeEmail()">Try Again</a>
+            </p>
+        </div>
+        <button class="verifyButton">Verify</button>
+    </div>
+
+    <div class="container step3">
+        <h2>Congratulations</h2>
+        <p> Your DEMO worked!!!</p>
+        <img src="images/image.png" />
+    </div>
+</body>
+</html>
